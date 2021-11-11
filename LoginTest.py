@@ -25,6 +25,8 @@ inputSenha = WebDriverWait(driver, 20).until(
 
 inputEmail.send_keys('admin')
 inputSenha.send_keys('1234')
+
+time.sleep(5)
 inputEmail.send_keys(Keys.RETURN)
 
 
