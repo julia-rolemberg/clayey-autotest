@@ -5,7 +5,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
@@ -31,8 +30,6 @@ botaoComecar = WebDriverWait(driver, 20).until(
 )
 
 time.sleep(1)
-# Encontrar o elemento na tela
-# ActionChains(driver).move_to_element(botaoComecar).perform()
 
 botaoComecar.click()
 

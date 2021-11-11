@@ -31,4 +31,6 @@ inputEmail.send_keys(Keys.RETURN)
 
 
 time.sleep(5)
-driver.close()
+
+if __name__ == "__main__":
+	driver.close()
