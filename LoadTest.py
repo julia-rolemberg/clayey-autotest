@@ -75,5 +75,6 @@ botaoFinalizar = WebDriverWait(driver, 20).until(
 	EC.presence_of_element_located((By.XPATH, '//*[@id="form"]/div[7]/button'))
 )
 
+botaoFinalizar.click()
 time.sleep(5)
 driver.close()

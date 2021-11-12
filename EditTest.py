@@ -11,18 +11,13 @@ botaoEditar.click()
 time.sleep(2)
 
 inputPreco = WebDriverWait(driver, 20).until(
-	EC.presence_of_element_located((By.CSS_SELECTOR, '#valor_produto'))
+	EC.presence_of_element_located((By.ID, 'valor_produto'))
 )
 
-inputPreco.send_keys(Keys.CLEAR)
+inputPreco.clear()
 
-time.sleep(2)
-botaoSalvar = WebDriverWait(driver, 20).until(
-	EC.presence_of_element_located((By.XPATH, '"//*[@id="form"]/div[11]/button"'))
-)
+inputPreco.send_keys(Keys.RETURN)
 
-time.sleep(1)
-driver.execute_script("window.scrollTo(0, 0)")
 
 time.sleep(5)
 driver.close()
